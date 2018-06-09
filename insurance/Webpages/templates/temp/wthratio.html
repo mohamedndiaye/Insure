@@ -1,0 +1,22 @@
+{% extends 'temp/base.html' %}
+{% block body %}
+<center>
+<h1>
+  Calculate Your Waist to Hip Ratio
+</h1>
+
+{% if wthratio %}
+<h2>
+  Your Waist to hip ratio is {{wthratio}}.
+</h2>
+{% endif %}
+<h4>The waist-hip ratio is one of the indicators of obesity- related diseases. For a person who is overweight, the risk of heart disease depends on the part where fats are stored. The most frequently used measure of adiposity is the waist-to-hip ratio, which helps to differentiate between andriod and gynoid type of obesity.<br><b>
+Healthy ratio for Men is: 0.8 or lowerHealthy ratio for Women is: 1.0 or lower</b></h4>
+
+<form action="." method="POST">
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" value="Calculate" />
+</form>
+</center><br><br>
+{% endblock %}

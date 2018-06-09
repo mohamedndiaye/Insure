@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Welcome to Insure</title>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+<style>
+html {
+font-family: 'Josefin Sans', sans-serif;
+letter-spacing: 2px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+     color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropdownlink {
+    background-color:white;
+}
+a{
+color: rgba(22, 126, 218, 1);
+}
+a:visited {
+    color: rgba(22, 126, 218, 1);
+}
+table {
+    display: table;
+    border-spacing: 2px;
+    border: 1px solid #ddd;
+    border-color: grey;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+</head>
+<body style="background-color:#f1f1f1;color:#666666;">
+<!-------NAVIGATION BAR------->
+        <ul style="color:white;">
+        <li class="n" style="background-color:rgba(255, 210, 210, 1);"><a ><big><i>Insure</a></i></big></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a  href="/bmi.html">BMI Calculator</a></li>
+            <li><a  href="/wthratio.html">WTH Ratio</a></li>
+            <li><a  href="/insurance.html">Plans</a></li>
+            <li><a  href="/location.html">Contact Us</a></li>
+            <li><a  href="/faq.html">FAQ</a></li><li><a  href="/homeinsurance.html">Home Insurance</a></li>
+                               
+        </ul><br>
+
+
+</p>
+<br><br>
+{% block body %}
+{% endblock %}
+<div style="width:100%;float:left;background-color:#181818;">
+<span style="color:grey;font-size:90%;text-align:center;">
+    
+    <div style="line-height: 20px;">
+                            <div style="border-top: 1px solid #333;padding: 15px 0;">
+                <h4 style="color: #777;font-weight: 400;letter-spacing: 1.5px;">&copy; Insure 2018 All RightsReserved. Designed by Syed Jahangir</h4>
+                    </div>
+</div>
+</html>

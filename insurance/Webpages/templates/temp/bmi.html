@@ -1,0 +1,21 @@
+{% extends 'temp/base.html' %}
+{% block body %}
+<center>
+<h1>
+  Calculate Your BMI
+</h1>
+
+{% if bmi %}
+<h2>
+  Your BMI is {{bmi}}.
+</h2>
+{% endif %}
+<h4>The body mass index accounts for differences in body composition by defining the level of adiposity. This is done according to the height and weight in an individual.</h4>
+
+<form action="." method="POST">
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" value="Calculate" />
+</form>
+</center><br><br>
+{% endblock %}
